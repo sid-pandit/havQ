@@ -12,10 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
 
     }
-    repositories {
 
-        maven { url 'https://jitpack.io' }
-    }
 }
 rootProject.name = "havQ"
 include ':app'

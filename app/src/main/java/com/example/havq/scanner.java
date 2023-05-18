@@ -1,34 +1,25 @@
 package com.example.havq;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.ktx.Firebase;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class scanner extends AppCompatActivity {
-
-
-    FirebaseFirestore firestore;
-
+FirebaseFirestore firestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
-
-
-
-
-
         firestore=FirebaseFirestore.getInstance();
 
         Map<String,Object> user = new HashMap<>();
@@ -46,7 +37,5 @@ public class scanner extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(scanner.this, "Failure", Toast.LENGTH_SHORT).show();
             }
-        });
-
-    }
+        });    }
 }
