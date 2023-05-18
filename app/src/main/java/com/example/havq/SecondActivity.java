@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         btnSave=findViewById(R.id.btnSave);
 
         Intent saveNxt;
-        saveNxt=new Intent(SecondActivity.this, Scanner.class);
+        saveNxt=new Intent(SecondActivity.this, scanner.class);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
