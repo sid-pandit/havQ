@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#041b39"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        android:textColor="#FFCBCB"
+        android:fontFamily="serif"
+        android:id="@+id/welcome"
+        android:gravity="top"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="New Event"
+        android:layout_marginTop="68dp"
+        android:textColor="#fff"
+        android:textSize="27dp"
+        app:cornerRadius="19dp"
+        android:id="@+id/NewEventBtn"
+        android:backgroundTint="#D8AA42"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Previous Events"
+        android:textStyle="bold"
+        android:layout_marginTop="9dp"
+        android:textColor="#415142"
+        android:textSize="22dp"
+        app:cornerRadius="19dp"
+        android:id="@+id/PreviousEventBtn"
+        android:backgroundTint="#fef0ec"/>
+</LinearLayout>
