@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">havQ</string>
+    <string name="data_saved_in_database">Data saved in DataBase</string>
 </resources>

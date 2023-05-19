@@ -9,51 +9,49 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EveName"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-        android:id="@+id/EveName"
         android:hint="Event"
-        app:helperText="Required*"
-        app:helperTextTextColor="#E32E2E"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
         app:boxCornerRadiusBottomEnd="15dp"
         app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
         app:counterEnabled="true"
         app:counterMaxLength="15"
         app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/event_icon"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="32dp"
+        app:helperText="Required*"
+        app:helperTextTextColor="#E32E2E"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098"
+        app:startIconDrawable="@drawable/event_icon">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLength="16"
             android:id="@+id/EveEdtTxt"
-             />
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:maxLength="16" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Date"
-        app:startIconDrawable="@drawable/baseline_date_range_24"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="32dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
         app:boxCornerRadiusBottomEnd="15dp"
         app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EveName">
+        app:layout_constraintTop_toBottomOf="@+id/EveName"
+        app:startIconDrawable="@drawable/baseline_date_range_24">
 
         <DatePicker
             android:id="@+id/simpleDatePicker"
@@ -72,8 +70,12 @@
         android:textColor="#fff"
         android:textSize="27dp"
         app:cornerRadius="19dp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="419dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EveName"
+        app:layout_constraintVertical_bias="0.827"
         tools:ignore="MissingConstraints" />
 
 
